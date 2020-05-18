@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Varvarin.UserComponent;
 
-namespace Varvarin.Lobby
+namespace Varvarin.Game
 {
     public interface ILobby
     {

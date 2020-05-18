@@ -6,15 +6,15 @@ using System.Threading;
 using System.Threading.Tasks;
 using Varvarin.UserComponent;
 
-namespace Varvarin.Lobby
+namespace Varvarin.Game
 {
-    public class MessageLobby : ILobby
+    public class GameLobby : ILobby
     {
         private readonly ConcurrentQueue<string> _messges;
         private readonly List<IUser> _allUsers;
         private readonly CancellationTokenSource lobbyCancellationTokenSource;
 
-        public MessageLobby()
+        public GameLobby()
         {
             _allUsers = new List<IUser>();
             _messges = new ConcurrentQueue<string>();
@@ -57,7 +57,7 @@ namespace Varvarin.Lobby
         public async Task ProcessClientMessage(string message, IUser user)
         {
 
-            _messges.Enqueue($"User: {user.GetUserName()}\nMessage: {message}\n");
+            _messges.Enqueue(message);
             await Task.CompletedTask;
         }
 

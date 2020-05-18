@@ -1,4 +1,4 @@
-﻿namespace Varvarin.Lobby
+﻿namespace Varvarin.Game
 {
     public enum AddUserToLobbyResult
     {

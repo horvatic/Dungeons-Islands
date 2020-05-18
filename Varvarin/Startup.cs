@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Varvarin.Lobby;
+using Varvarin.Game;
 using Varvarin.UserComponent;
 
 namespace Varvarin.Web
@@ -29,8 +29,8 @@ namespace Varvarin.Web
                 ReceiveBufferSize = BUFFER_SIZE
             };
             app.UseWebSockets(webSocketOptions);
-            var deafultLobby = new MessageLobby();
-            var lobbyCoordinator = new LobbyCoordinator(deafultLobby);
+            var deafultLobby = new GameLobby();
+            var lobbyCoordinator = new GameCoordinator(deafultLobby);
 
             app.Use(async (context, next) =>
             {

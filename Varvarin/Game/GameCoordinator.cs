@@ -2,13 +2,13 @@
 using System.Threading.Tasks;
 using Varvarin.UserComponent;
 
-namespace Varvarin.Lobby
+namespace Varvarin.Game
 {
-    public class LobbyCoordinator
+    public class GameCoordinator
     {
         private readonly ILobby _lobby;
 
-        public LobbyCoordinator(ILobby lobby)
+        public GameCoordinator(ILobby lobby)
         {
             _lobby = lobby;
             _lobby.StartLobby();
