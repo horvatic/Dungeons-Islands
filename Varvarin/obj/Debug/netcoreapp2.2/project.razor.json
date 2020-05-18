@@ -1,0 +1,19 @@
+{
+  "FilePath": "/home/shawn/Documents/Games/Dungeons Islands/Varvarin/Varvarin-Mud-Plus.Web.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "Varvarin_Mud_Plus.Web",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}
